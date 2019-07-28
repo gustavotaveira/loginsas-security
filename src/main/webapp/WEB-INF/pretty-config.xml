@@ -1,0 +1,18 @@
+<!--URL's amigaveis-->
+<pretty-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="login">
+        <pattern value="/faces/login"/>
+        <view-id value="/WEB-INF/views/login/login.xhtml"/>
+    </url-mapping>
+
+    <url-mapping id="success">
+        <pattern value="/faces/success"/>
+        <view-id value="/WEB-INF/views/login/success.xhtml"/>
+    </url-mapping>
+
+
+</pretty-config>
