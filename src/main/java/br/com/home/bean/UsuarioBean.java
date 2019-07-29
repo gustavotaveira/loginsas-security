@@ -49,6 +49,7 @@ public class UsuarioBean implements Serializable {
         InputText nomeInput = (InputText) app.createComponent(InputText.COMPONENT_TYPE);
         nomeInput.setId("nome");
         nomeInput.setStyle("width: 100%");
+        nomeInput.getAttributes().put("name", "username");
         nomeInput.setValueExpression("value", app.getExpressionFactory()
                 .createValueExpression(FacesContext.getCurrentInstance().getELContext(), "#{usuarioBean.nome}", String.class));
         panelGrid.getChildren().add(nomeInput);
@@ -61,6 +62,7 @@ public class UsuarioBean implements Serializable {
 
         InputText senhaInput = (InputText) app.createComponent(InputText.COMPONENT_TYPE);
         senhaInput.setId("senha");
+        senhaInput.getAttributes().put("name", "password");
         senhaInput.setStyle("width: 100%");
         senhaInput.setValueExpression("value", app.getExpressionFactory()
                 .createValueExpression(FacesContext.getCurrentInstance().getELContext(), "#{usuarioBean.senha}", String.class));
